@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            border: 2px solid black;
+            width: 40%;
+            text-align: center;
+            background-color: black;
+            color: white;
+            margin: auto;
+            padding: 10px;
+            border-radius: 20px;
+
+       }
+        
+        button{
+            border: 2px solid greenyellow;
+            background-color: black;
+            color: white;
+            border-radius: 50px;
+            width: 20%;
+            margin: auto;
+            font-weight: 900;
+
+        }
+
+        input{
+            font-size: 20px;
+            border-radius: 20px;
+            background-color: white;
+            border: 2px solid greenyellow;
+            height: 40px;
+
+        }
+
+        .cler{
+            border: 2px solid greenyellow;
+            background-color: black;
+            color: white;
+            border-radius: 50px;
+            width: 30%;
+            margin: auto;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Calculator</h1>
+        <br><br>
+        <input disabled = "" type="text" name="" id="inp">
+        <br><br>
+        <button id="clere" onclick="cler()" class="cler">clear</button>
+        <button id="cle" onclick="cled('')" class="cler">clear All</button>
+        <br><br>
+
+        <div class="main">
+            <div>
+                <button onclick="clicked('9')">9</button>
+                <button onclick="clicked('8')">8</button>
+                <button onclick="clicked('7')">7</button>
+                <button onclick="clicked('+')">+</button>
+            </div>
+            <br><br>
+
+            <div>
+                <button onclick="clicked('6')">6</button>
+                <button onclick="clicked('5')">5</button>
+                <button onclick="clicked('4')">4</button>
+                <button onclick="clicked('-')">-</button>
+            </div>
+            <br><br>
+
+            <div>
+                <button onclick="clicked('3')">3</button>
+                <button onclick="clicked('2')">2</button>
+                <button onclick="clicked('1')">1</button>
+                <button onclick="clicked('*')">*</button>
+            </div>
+            <br><br>
+
+            <div>
+                <button onclick="clicked('0')">0</button>
+                <button onclick="clicked('/')">/</button>
+                <button onclick="clicked('.')">.</button>
+                <button onclick="equal()">=</button>
+            </div>
+            <br><br>
+        </div>
+    </div>
+
+
+    
+    <script src="app.js"></script>
+</body>
+</html>
